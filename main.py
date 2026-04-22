@@ -7,4 +7,11 @@ print(data.head())
 print(data.info())
 print(data.describe())
 
+# Data cleaning -------------
+  
+# Remove $ and commas, converts to folat 
 
+
+data.columns = data.columns.str.strip()
+print(data.columns)
+     
