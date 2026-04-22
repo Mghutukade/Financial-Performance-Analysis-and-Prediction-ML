@@ -1,86 +1,69 @@
-# 📊 Financial Performance Analysis and Prediction using Machine Learning
+# 📊 Financial Performance Analysis & Prediction
 
-## 🚀 Project Overview
-
-This project focuses on analyzing financial data and predicting future performance using Machine Learning algorithms. It includes data visualization, model comparison, and a live interactive dashboard.
+> 🚀 A Machine Learning powered dashboard for analyzing financial data and predicting profit in real-time.
 
 ---
 
-## 🧠 Algorithms Used
+## 🖼️ Dashboard Preview
 
-* Linear Regression (Baseline Model)
-* Random Forest (Improved Accuracy)
-* XGBoost (Advanced Model)
+<p align="center">
+  <img src="images/dashboard.png" width="800"/>
+</p>
+
+---
+
+## ✨ Key Highlights
+
+✔ End-to-End Machine Learning Pipeline  
+✔ Interactive Streamlit Dashboard  
+✔ Real-time Profit Prediction  
+✔ Business Insights & KPIs  
+✔ Model Comparison & Feature Importance  
 
 ---
 
 ## 📊 Features
 
-* Financial data analysis (EDA)
-* Data visualization (Revenue, Profit, Expenses)
-* Machine learning model comparison
-* Real-time prediction dashboard
+🔮 **Prediction System**
+- Predict profit based on input values  
+- Real-time ML model inference  
+
+📈 **Data Insights**
+- Sales vs Profit analysis  
+- Top performing products  
+- Country-wise profit breakdown  
+
+🤖 **Model Analysis**
+- Linear Regression, Random Forest, XGBoost  
+- Model performance comparison  
+- Feature importance visualization  
 
 ---
 
-## 🛠️ Technologies Used
+## 🧠 Models Used
 
-* Python
-* Pandas, NumPy
-* Matplotlib
-* Scikit-learn
-* XGBoost
-* Streamlit
+| Model | Purpose |
+|------|--------|
+| Linear Regression | Baseline model |
+| Random Forest | Final model (best performance) |
+| XGBoost | Advanced boosting model |
 
 ---
 
 ## 📂 Project Structure
 
-```
-├── app.py              # Streamlit Dashboard
-├── model.py            # ML Models Training
-├── financial_data.csv  # Dataset
-├── eda.py              # Data Analysis
-```
-
----
-
-## ▶️ How to Run
-
-### 1. Install dependencies
-
-```
-pip install pandas numpy scikit-learn matplotlib streamlit xgboost
-```
-
-### 2. Run Model
-
-```
-python model.py
-```
-
-### 3. Run Dashboard
-
-```
-streamlit run app.py
-```
-
----
-
-## 📈 Output
-
-* Model accuracy comparison
-* Financial trends visualization
-* Real-time profit prediction
-
-## 🎯 Conclusion
-
-Machine learning models can effectively analyze financial data and provide accurate predictions, helping in better business decision-making.
-
----
-
-## 🔮 Future Scope
-
-* Integration with real-time financial APIs
-* Deep Learning models (LSTM)
-* Stock market prediction
+```bash
+Financial_Project/
+│
+├── src/
+│   ├── main.py        # Data preprocessing
+│   ├── model.py       # Model training & evaluation
+│   ├── app.py         # Streamlit dashboard
+│
+├── data/
+│   └── Financials.csv
+│
+├── model.pkl          # Trained model
+├── scores.json        # Model performance
+├── images/            # Screenshots
+└── README.md
