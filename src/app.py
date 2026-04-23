@@ -9,10 +9,10 @@ import json
 st.set_page_config(page_title="Financial Dashboard", layout="wide")
 
 # ---------------- LOAD MODEL ----------------
-model = joblib.load("model.pkl")
+model = joblib.load("../model.pkl")
 
 # ---------------- LOAD DATA ----------------
-data = pd.read_csv("data/Financials.csv")
+data = pd.read_csv("../data/Financials.csv")
 data.columns = data.columns.str.strip()
 
 cols = ['Units Sold','Manufacturing Price','Sale Price','Gross Sales',
@@ -127,7 +127,7 @@ with tab3:
     with col1:
         st.write("### 📊 Model Performance")
 
-        with open("scores.json") as f:
+        with open("../scores.json") as f:
             scores_data = json.load(f)
 
         models = list(scores_data.keys())
